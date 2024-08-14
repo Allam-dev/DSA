@@ -1,3 +1,14 @@
+# The Problem
+code
+```cpp
+char x = 'a';
+cout << &x << nl;
+```
+output 
+```cpp
+_≡↓Ñ⌠_☻
+```
+# Solution
 The difference in how the address of a `char` versus an `int` is displayed when printed using `cout` is due to how `cout` interprets pointers based on their data type.
 
 ### Explanation
@@ -49,3 +60,9 @@ This tells `cout` to print the address in a human-readable hexadecimal format, r
   ```
 
 This approach avoids the issues related to `cout` interpreting pointers based on their data type.
+
+## You can use 'printf()' instead of 'cout' with '%x'
+```c
+char x = 'a';
+printf("%x", &x); // '%x' is used to prints the address of variable in hexadecimal
+```
