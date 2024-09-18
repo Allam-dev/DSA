@@ -6,7 +6,7 @@ int main()
 {
 
     int arr[6] = {1, 2, 3, 4, 5, 6};
-    int *p_arr = arr;
+    int *p_arr = arr; // arr = &arr[0]
     int (*p) [6] = &arr;
 
     // arr++ is invalid because arr is a constant pointer
