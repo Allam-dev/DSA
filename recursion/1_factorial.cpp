@@ -2,6 +2,8 @@
 
 using namespace std;
 
+
+// this type is a dircet recursion
 int fact(int x)
 {
     if (x == 0)
